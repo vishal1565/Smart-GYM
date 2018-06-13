@@ -5,7 +5,7 @@ sensor = mpu6050(0x68)
 print " waiting for the sensor to callibrate..."
 sleep(2)
 
-#Storing data in Angle_measure.csv with features: accl_x, accl_y, accl_z, gyro_x, gyro_y, gyro_z, Temp
+#Storing data in Angle_measure.csv with features: accl_x, accl_y, accl_z, gyro_x, gyro_y, gyro_z, Temperature
 with open('Angle_measure.csv','a') as f:
     pen=csv.writer(f)
     while True:
